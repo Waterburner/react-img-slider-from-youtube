@@ -1,28 +1,82 @@
-html {
-    font-size: 62.5%; // 1rem is 10px
-}
 
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
-    font-family: 'montserrat';
-}
 
-body {
-    overflow-x: hidden;
-    font-weight: normal;
+// html {
+//     font-size: 62.5%; // 1rem is 10px
+// }
 
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    -webkit-tap-highlight-color: transparent;
-}
+// *,
+// *::after,
+// *::before {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: inherit;
+//     font-family: 'montserrat';
+// }
 
-.app {
-    margin-top: 2rem;
-    display: grid;
-    justify-items: center;
-}
+// body {
+//     overflow-x: hidden;
+//     font-weight: normal;
+
+//     -webkit-font-smoothing: antialiased;
+//     -moz-osx-font-smoothing: grayscale;
+//     text-rendering: optimizeLegibility;
+//     -webkit-tap-highlight-color: transparent;
+// }
+
+// .app {
+//     margin-top: 2rem;
+//     display: grid;
+//     justify-items: center;
+// }
+
+
+.slide img {
+    width: 20rem;
+    margin: 0 auto;
+  }
+  
+  .slide {
+    transform: scale(0.2);
+    transition: transform 300ms;
+    opacity: 0.5;
+  }
+  
+  .activeSlide {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  
+  .arrow {
+    background-color: #fff;
+    position: absolute;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .arrow svg {
+    transition: color 300ms;
+  }
+  
+  .arrow svg:hover {
+    color: #68edff;
+  }
+  
+  .next {
+    right: 0%;
+    top: 50%;
+  }
+  
+  .prev {
+    left: 0%;
+    top: 50%;
+  }
+  
+
+
+    div {
+      height: 250px;
+
+      img {
+        height: inherit;
+      }
+    }
