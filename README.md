@@ -1,4 +1,4 @@
-# react imgage slider
+# react image slider
 
 > following https://www.youtube.com/watch?v=odSfSAoUREU
 
